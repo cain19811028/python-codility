@@ -35,17 +35,39 @@ For example, given array A such that:
 the function should return 7, as explained in the example above.
 """
 
-#simple test n=5
-#simple test n=11
-#extreme_single_item [42]
-#small random test n=601
-
 A = [9,3,9,3,9,7,9]
 
-def solution(A):
- 	sortedList = sorted(A)
- 	for i in range(0, len(sortedList), 2):
- 		if sortedList[i] != sortedList[i+1]:
- 			return sortedList[i]
+"""
+使用 XOR 的簡易判斷方式
+ 0 ^ 9 => 0000 ^ 1001 => 1001 =>  9
+ 9 ^ 3 => 1001 ^ 0011 => 1010 => 10
+10 ^ 9 => 1010 ^ 1001 => 0011 =>  3
+ 3 ^ 3 => 0011 ^ 0011 => 0000 =>  0
+ 0 ^ 9 => 0000 ^ 1001 => 1001 =>  9
+ 9 ^ 7 => 1001 ^ 0111 => 1110 => 15
+15 ^ 9 => 1110 ^ 1001 => 0111 =>  7
+"""
+def solutionByXOR(A):
+	result = 0
+	for i, number in enumerate(A):
+		result ^= number
+	return result
 
-print(json.dumps(solution(A)))
+print("xor result = " + json.dumps(solutionByXOR(A)))
+
+"""
+使用排序後兩兩比較的檢查方式
+"""
+def solutionByLoop(A):
+	if(len(A) == 1):
+		return A[0]
+	else:
+	 	sortedList = sorted(A)
+	 	print("loop step 1 = " + json.dumps(sortedList))
+	 	count = len(sortedList) - 1
+	 	for i in range(0, count, 2):
+	 		if sortedList[i] != sortedList[i+1]:
+	 			return sortedList[i]
+	 	return sortedList[count]
+
+print("loop result = " + json.dumps(solutionByLoop(A)))
