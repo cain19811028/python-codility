@@ -1,4 +1,5 @@
 import json
+from itertools import groupby
 
 """
 Task：OddOccurrencesInArray
@@ -35,10 +36,10 @@ For example, given array A such that:
 the function should return 7, as explained in the example above.
 """
 
-A = [9,3,9,3,9,7,9]
+A = [9, 3, 9, 3, 9, 7, 9]
 
 """
-使用 XOR 的簡易判斷方式
+使用 XOR 的簡易方式
  0 ^ 9 => 0000 ^ 1001 => 1001 =>  9
  9 ^ 3 => 1001 ^ 0011 => 1010 => 10
 10 ^ 9 => 1010 ^ 1001 => 0011 =>  3
@@ -49,11 +50,22 @@ A = [9,3,9,3,9,7,9]
 """
 def solutionByXOR(A):
 	result = 0
-	for i, number in enumerate(A):
+	for number in (A):
 		result ^= number
 	return result
 
 print("xor result = " + json.dumps(solutionByXOR(A)))
+
+"""
+使用 groupby 的簡易方式
+"""
+def solutionByGroup(A):
+	for k, v in groupby(sorted(A)):
+		if(len(list(v)) == 1):
+			return k
+	return 0
+
+print("group result = " + json.dumps(solutionByGroup(A)))
 
 """
 使用排序後兩兩比較的檢查方式
@@ -63,7 +75,6 @@ def solutionByLoop(A):
 		return A[0]
 	else:
 	 	sortedList = sorted(A)
-	 	print("loop step 1 = " + json.dumps(sortedList))
 	 	count = len(sortedList) - 1
 	 	for i in range(0, count, 2):
 	 		if sortedList[i] != sortedList[i+1]:

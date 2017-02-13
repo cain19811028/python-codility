@@ -28,13 +28,13 @@ N = 328
 """
 使用 Regular Expression 的簡易方法
 """
-def solution(N):
+def solutionByRegex(N):
 	return len(max(re.findall('(0*)1', bin(N)[2:]))) if N > 0 else 0
 
 print("regex step 1 = " + bin(N)[2:])
 print("regex step 2 = " + json.dumps(re.findall('(0*)1', bin(N)[2:])))
 print("regex step 3 = " + max(re.findall('(0*)1', bin(N)[2:])))
-print("regex result = " + json.dumps(solution(N)))
+print("regex result = " + json.dumps(solutionByRegex(N)))
 
 """
 使用 strip 和 split 的簡易方法
