@@ -38,7 +38,15 @@ D = 30
 """
 使用 math.ceil 的簡易方式
 """
-def solution(X, Y, D):
+def solutionByCeil(X, Y, D):
 	return int(math.ceil((Y - X) / float(D)))
 
-print(solution(X, Y, D))
+print(solutionByCeil(X, Y, D))
+
+"""
+使用餘數判斷回傳的結果
+"""
+def solutionByMod(X, Y, D):
+	return (Y - X) / D if (Y - X) % D == 0 else ((Y - X) / D) + 1
+
+print(solutionByMod(X, Y, D))
