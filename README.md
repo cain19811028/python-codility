@@ -9,5 +9,6 @@
 | 20170213 | Lesson 2 - Arrays | CyclicRotation |
 | 20170213 | Lesson 3 - Time Complexity | FrogJmp |
 | 20170214 | Lesson 3 - Time Complexity | PermMissingElem |
+| 20170215 | Lesson 3 - Time Complexity | TapeEquilibrium |
 
 [co]: <https://codility.com/programmers/>
