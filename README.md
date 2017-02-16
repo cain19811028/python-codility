@@ -12,5 +12,6 @@
 | 20170215 | Lesson 3 - Time Complexity | TapeEquilibrium |
 | 20170215 | Lesson 4 - Counting Elements | MissingInteger |
 | 20170215 | Lesson 4 - Counting Elements | PermCheck |
+| 20170216 | Lesson 4 - Counting Elements | FrogRiverOne |
 
 [co]: <https://codility.com/programmers/>
