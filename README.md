@@ -15,5 +15,6 @@
 | 20170216 | Lesson 4 - Counting Elements | FrogRiverOne |
 | 20170217 | Lesson 4 - Counting Elements | MaxCounters |
 | 20170217 | Lesson 5 - Prefix Sums | CountDiv |
+| 20170217 | Lesson 5 - Prefix Sums | MaxCounters |
 
 [co]: <https://codility.com/programmers/>
