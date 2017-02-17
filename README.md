@@ -13,5 +13,6 @@
 | 20170215 | Lesson 4 - Counting Elements | MissingInteger |
 | 20170215 | Lesson 4 - Counting Elements | PermCheck |
 | 20170216 | Lesson 4 - Counting Elements | FrogRiverOne |
+| 20170217 | Lesson 4 - Counting Elements | MaxCounters |
 
 [co]: <https://codility.com/programmers/>
