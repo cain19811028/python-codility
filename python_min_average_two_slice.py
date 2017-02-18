@@ -1,4 +1,5 @@
 import json
+import sys
 
 """
 Task：MinAvgTwoSlice
@@ -53,25 +54,30 @@ the function should return 1, as explained above.
 A = [4, 2, 2, 5, 1, 5, 8]
 
 """
-Correctness：100%、Performance：90%
+Correctness：100%、Performance：100%
 """
 def solution(A):
     result = 0
-    minAvg3 = 0
-    minAvg2 = (A[0] + A[1]) / 2
-    minValue = minAvg2
     length = len(A)
-    for i in range(2, length):
-        minAvg2 = (A[i-1] + A[i]) / 2
-        minAvg3 = (A[i-2] + A[i-1] + A[i]) / 3
-        if(minAvg2 < minAvg3):
-            if(minAvg2 < minValue):
-                minValue = minAvg2
-                result = i - 1
-        else:
-            if(minAvg3 < minValue):
-                minValue = minAvg3
-                result = i - 2
+    valueList = [0]
+    for i in range(length):
+        valueList.append(valueList[i] + A[i])
+
+    minAvg = sys.float_info.max
+    for i in range(length - 1):
+        index1 = i + 1
+        index2 = i + 2
+        avg = (valueList[index1 + 1] - valueList[i]) / 2.0
+        if(avg < minAvg):
+            minAvg = avg
+            result = i
+
+        if(i < length - 2):
+            avg = (valueList[index2 + 1] - valueList[i]) / 3.0
+            if(avg < minAvg):
+                minAvg = avg
+                result = i
+
     return result
 
 print(solution(A))
