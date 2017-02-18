@@ -56,14 +56,43 @@ the function should return the values [2, 4, 1], as explained above.
 S = "CAGCCTA"
 P = [2, 5, 0]
 Q = [4, 5, 6]
+mapping = {"A":100001, "C":100001, "G":100001}
 
 """
+用 mapping 先記錄各字元最早出現的位置
+Correctness：100%、Performance：100%
+"""
+def solutionByMapping(S, P, Q):
+    length = len(S)
+    matrix = [([0] * length) for i in range(len(mapping))]
+    for i in range(length-1, -1, -1):
+        mapping[S[i]] = i
+        matrix[0][i] = mapping['A']
+        matrix[1][i] = mapping['C']
+        matrix[2][i] = mapping['G']
+    length = len(P)
+    result = [0] * length
+    for i in range(length):
+        if matrix[0][P[i]] <= Q[i]:
+            result[i] = 1
+        elif matrix[1][P[i]] <= Q[i]:
+            result[i] = 2
+        elif matrix[2][P[i]] <= Q[i]:
+            result[i] = 3
+        else:
+            result[i] = 4
+    return result
+
+print(solutionByMapping(S, P, Q))
 
 """
-def solution(S, P, Q):
+只有75分，但很簡易的方法（效能O(N*M)被扣分）
+Correctness：100%、Performance：33%
+"""
+def solutionBySlice(S, P, Q):
     result = []
-    count = len(P)
-    for i in range(0, count):
+    length = len(P)
+    for i in range(length):
         temp = (S[P[i]:Q[i]+1])
         if "A" in temp:
             result.append(1)
@@ -75,4 +104,4 @@ def solution(S, P, Q):
             result.append(4)
     return result
 
-print(solution(S, P, Q))
+print(solutionBySlice(S, P, Q))

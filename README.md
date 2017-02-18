@@ -16,6 +16,6 @@
 | 20170217 | Lesson 4 - Counting Elements | MaxCounters | 100 % |
 | 20170217 | Lesson 5 - Prefix Sums | CountDiv | 100 % |
 | 20170217 | Lesson 5 - Prefix Sums | MaxCounters | 100 % |
-| 20170217 | Lesson 5 - Prefix Sums | GenomicRangeQuery | 75 % |
+| 20170217 | Lesson 5 - Prefix Sums | GenomicRangeQuery | 100 % |
 
 [co]: <https://codility.com/programmers/>
