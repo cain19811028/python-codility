@@ -18,5 +18,6 @@
 | 20170217 | Lesson 5 - Prefix Sums | MaxCounters | 100 % |
 | 20170218 | Lesson 5 - Prefix Sums | GenomicRangeQuery | 100 % |
 | 20170219 | Lesson 5 - Prefix Sums | MinAvgTwoSlice | 100 % |
+| 20170220 | Lesson 6 - Sorting | Distinct | 100 % |
 
 [co]: <https://codility.com/programmers/>
