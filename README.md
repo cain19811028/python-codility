@@ -20,5 +20,6 @@
 | 20170219 | Lesson 5 - Prefix Sums | MinAvgTwoSlice | 100 % |
 | 20170220 | Lesson 6 - Sorting | Distinct | 100 % |
 | 20170220 | Lesson 6 - Sorting | MaxProductOfThree | 100 % |
+| 20170221 | Lesson 6 - Sorting | Triangle | 100 % |
 
 [co]: <https://codility.com/programmers/>
