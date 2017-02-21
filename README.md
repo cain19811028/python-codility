@@ -21,5 +21,6 @@
 | 20170220 | Lesson 6 - Sorting | Distinct | 100 % |
 | 20170220 | Lesson 6 - Sorting | MaxProductOfThree | 100 % |
 | 20170221 | Lesson 6 - Sorting | Triangle | 100 % |
+| 20170221 | Lesson 6 - Sorting | NumberOfDiscIntersections | 100 % |
 
 [co]: <https://codility.com/programmers/>
