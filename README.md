@@ -22,5 +22,7 @@
 | 20170220 | Lesson 6 - Sorting | MaxProductOfThree | 100 % |
 | 20170221 | Lesson 6 - Sorting | Triangle | 100 % |
 | 20170221 | Lesson 6 - Sorting | NumberOfDiscIntersections | 100 % |
+| 20170222 | Lesson 7 - Stacks and Queues | Brackets | 100 % |
+| 20170222 | Lesson 7 - Stacks and Queues | StoneWall | 100 % |
 
 [co]: <https://codility.com/programmers/>
