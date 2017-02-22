@@ -25,5 +25,6 @@
 | 20170222 | Lesson 7 - Stacks and Queues | Brackets | 100 % |
 | 20170222 | Lesson 7 - Stacks and Queues | StoneWall | 100 % |
 | 20170222 | Lesson 7 - Stacks and Queues | Fish | 100 % |
+| 20170222 | Lesson 7 - Stacks and Queues | Nesting | 100 % |
 
 [co]: <https://codility.com/programmers/>
