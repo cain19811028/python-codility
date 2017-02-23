@@ -55,16 +55,14 @@ Assume that:
 A = [4, 3, 4, 4, 4, 2]
 
 """
-使用 loop 的方式慢慢解
+先 groupby 再用 loop 的方式慢慢解
 """
 def solution(A):
 	d = dict()
 	key = value = -1
-	for k, v in groupby(sorted(A)):
-		length = len(list(v))
-		if(length > value):
-			key = k
-			value = length
+	maxGroup = max(groupby(sorted(A)), key = lambda x: len(list(x[1])))
+	key = maxGroup[0]
+	value = len(list(filter(lambda x: x == key, A)))
 
 	length = len(A)
 	if value <= length / 2:
