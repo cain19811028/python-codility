@@ -27,5 +27,6 @@
 | 20170222 | Lesson 7 - Stacks and Queues | Fish | 100 % |
 | 20170222 | Lesson 7 - Stacks and Queues | Nesting | 100 % |
 | 20170222 | Lesson 8 - Leader | Dominator | 100 % |
+| 20170222 | Lesson 8 - Leader | EquiLeader | 100 % |
 
 [co]: <https://codility.com/programmers/>
