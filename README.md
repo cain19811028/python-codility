@@ -30,5 +30,6 @@
 | Lesson 8 - Leader | EquiLeader | 100 % |
 | Lesson 9 - Maximum slice problem | MaxDoubleSliceSum | 100 % |
 | Lesson 9 - Maximum slice problem | MaxProfit | 100 % |
+| Lesson 9 - Maximum slice problem | MaxSliceSum | 100 % |
 
 [co]: <https://codility.com/programmers/>
