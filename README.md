@@ -31,5 +31,6 @@
 | Lesson 9 - Maximum slice problem | MaxDoubleSliceSum | 100 % |
 | Lesson 9 - Maximum slice problem | MaxProfit | 100 % |
 | Lesson 9 - Maximum slice problem | MaxSliceSum | 100 % |
+| Lesson 10 - Prime and composite numbers | CountFactors | 100 % |
 
 [co]: <https://codility.com/programmers/>
