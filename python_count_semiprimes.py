@@ -56,7 +56,7 @@ P = [1, 4, 16]
 Q = [26, 10, 20]
 
 """
-先列出所有半質數的方式
+用半質數相乘取出結果
 Correctness：100%、Performance：40%
 """
 def solution(N, P, Q):
@@ -64,6 +64,8 @@ def solution(N, P, Q):
 
     # 先取得半質數列表
     prime = [ p for p in  range(2, int(N / 2) + 1) if 0 not in [ p % d for d in range(2, int(sqrt(p))+1)] ]
+
+    # 標註所有相乘結果
     for i in prime:
         for j in prime:
             k = i * j
