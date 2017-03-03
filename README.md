@@ -34,5 +34,6 @@
 | Lesson 10 - Prime and composite numbers | CountFactors | 100 % |
 | Lesson 10 - Prime and composite numbers | MinPerimeterRectangle | 100 % |
 | Lesson 10 - Prime and composite numbers | Peaks | 100 % |
+| Lesson 11 - Sieve of Eratosthenes | CountSemiprimes | 100 % |
 
 [co]: <https://codility.com/programmers/>
