@@ -39,7 +39,7 @@ M = 4
 
 """
 參考 Maurice Dassen 大大的做法
-Correctness：100%、Performance：40%
+Correctness：100%、Performance：100%
 """
 def solution(N, M):
 
