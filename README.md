@@ -36,5 +36,6 @@
 | Lesson 10 - Prime and composite numbers | Peaks | 100 % |
 | Lesson 11 - Sieve of Eratosthenes | CountSemiprimes | 100 % |
 | Lesson 12 - Euclidean algorithm | ChocolatesByNumbers | 100 % |
+| Lesson 13 - Fibonacci numbers | Ladder | 100 % |
 
 [co]: <https://codility.com/programmers/>
